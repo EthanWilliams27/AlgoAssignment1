@@ -5,18 +5,17 @@ public class Question4 {
 
         //iterates through array
         for(int i=0; i< nFibo.length;i++){
-            // if val is equal to the val in array it returns the indices of that value
             if(val == nFibo[i]){
-                System.out.println("This value is the "+ i + " number in this sequence.");
-                // if not it prints out the indices that is lowest/cloest to it.
+                System.out.println("This value is the "+ (i+1) + " number in this sequence.");
+                break;
             } else if ( val < nFibo[i]){
-                System.out.println(i-1);
+                System.out.println(i+1);
                 break;
             }
         }
     }
     public static void main(String[] args) {
-        int val = 38;
+        int val = 39;
         Sequence(val);
     }
 }
